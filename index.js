@@ -21,8 +21,8 @@ function updateRecipe() {
 }
 
 function displayEditForm() {
-  var name = document.getElementById("recipeName").innerText;
-  var description = document.getElementById("recipeDescription").innerText;
+  var name = document.getElementById("recipeName");
+  var description = document.getElementById("recipeDescription");
   var ingredientList = document.getElementsByName("ingredients");
   var ingredients = [];
   for(var i=0;i<ingredientList.length;i++) {
