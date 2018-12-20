@@ -55,7 +55,7 @@ function handlebarsSetup() {
     return new Handlebars.SafeString('<li name="ingredients">' + ingredient + '</li>');
   });
   // Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML);
-  Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-detail-partial").innerHTML);
+  Handlebars.registerPartial('recipeDetailsPartial', document.getElementById("recipe-details-partial").innerHTML);
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML);
 }
 
