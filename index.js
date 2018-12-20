@@ -26,7 +26,7 @@ function displayEditForm() {
   var ingredientList = document.getElementsByName("ingredients");
   var ingredients = [];
   for(var i=0;i<ingredientList.length;i++) {
-    ingredients.push(ingredientList[i].innerText);
+    ingredients.push(ingredientList[i].innerHTML);
   }
 
   var recipe = {name, description, ingredients, handleSubmit: "createRecipe()"};
