@@ -29,7 +29,7 @@ function displayEditForm() {
     ingredients.push(ingredientList[i].innerHTML);
   }
 
-  var newDescription = description + name.toLowerCase();
+  var newDescription = description + " " + name.toLowerCase();
   var recipe = {name, newDescription, ingredients, handleSubmit: "createRecipe()"};
 
   var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML;
