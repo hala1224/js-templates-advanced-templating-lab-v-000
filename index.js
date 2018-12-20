@@ -22,7 +22,7 @@ function updateRecipe() {
 
 function displayEditForm() {
   var name = document.getElementById("recipeName").innerHTML;
-  var description = document.getElementById("recipeDescription").innerText;
+  var description = document.getElementById("recipeDescription").innerHTML;
   var ingredientList = document.getElementsByName("ingredients");
   var ingredients = [];
   for(var i=0;i<ingredientList.length;i++) {
