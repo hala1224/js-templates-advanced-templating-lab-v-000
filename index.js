@@ -29,7 +29,8 @@ function displayEditForm() {
     ingredients.push(ingredientList[i].innerHTML);
   }
 
-  var recipe = {name, description, ingredients, handleSubmit: "createRecipe()"};
+  var newDescription = description + name.toLowerCase();
+  var recipe = {name, newDescription, ingredients, handleSubmit: "createRecipe()"};
 
   var recipeFormTemplate = document.getElementById("recipe-form-template").innerHTML;
   var template = Handlebars.compile(recipeFormTemplate);
